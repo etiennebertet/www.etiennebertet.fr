@@ -26,7 +26,7 @@
 <h2>You need to fill all fields to submit the form.</h2>'); return;
 
     }else{
-        $secret="6LfNq2cfAAAAAJvWObmbZU--7WK5jzant-oBgmMv";
+        $secret="RecaptchaKey";
         $response= htmlspecialchars($_POST['g-recaptcha-response']);
         $remoteip= $_SERVER['REMOTE_ADDR'];
         $request="https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
