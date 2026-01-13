@@ -1,0 +1,848 @@
+html{
+	min-height: 100%;
+}
+body{
+	text-align:center;
+  display:grid;
+  grid-template-rows: auto 1fr auto;
+  min-height:100vh;
+	padding: 0;
+	margin: 0;
+	background-color: black;
+}
+*{
+	color: whitesmoke;
+	font-family: 'Work Sans', sans-serif;
+}
+h1{
+	font-size: 3vw;
+	font-family: 'Work Sans Thin';
+	letter-spacing: 0.1em;	
+}
+h2{
+	font-size: 2vw;
+	font-family: 'Work Sans Thin';
+	letter-spacing: 0.05em;
+}
+h3{
+	font-size: 1.5vw;
+	font-family: 'Work Sans Thin';
+	letter-spacing: 0.025em;
+}
+p{
+	font-size: 1vw;
+	letter-spacing: 0.01em;
+	line-height: 2em;
+}
+li{
+	line-height: 2em;
+}
+.audiofile{
+	color: black;
+}
+/*--------------------------------------Menu-----------------------------------------------*/
+
+#menu{
+	margin: 2% 5% 0 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.menu{
+	font-size: 1.5vw;
+/*text-shadow: -0.01px 0.01px 1.5px ghostwhite, 0.01px -0.01px 1.5px ghostwhite, 0.01px 0.01px 1.5px ghostwhite, -0.01px -0.01px 1.5px ghostwhite;*/
+}
+.image{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.image img{
+	width: 11%;
+}
+#line{
+	text-align: center;
+}
+#line img{
+	text-align: center;
+	width: 100%;
+}
+.menu a:link{
+	color: whitesmoke;
+	text-decoration: none;
+}
+.menu a:visited{
+	color: whitesmoke;
+	text-decoration: none;
+}
+.menu a:active{
+	color: black;
+	text-decoration: none;
+}
+.menu a:hover{
+	color: darkgrey;
+	text-decoration: none;
+}
+
+/*---------------------------------------------Line------------------------------------------------*/
+
+.linestandard{
+	display: flex;
+}
+.linestandard img{
+	width: 100%;
+}
+/*--------------------------------------Intro|Profile-------------------------------------------*/
+
+
+#welcome{
+	width: 100%;
+	text-align: center;
+	margin: 0 0 0 0;
+	font-family: 'Work Sans ExtraLight';
+}
+.profile{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.intro_parent{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5vw;
+}
+.intro_parent a{
+		text-decoration: none;
+}
+.intro_child{
+	width: 40%;
+	text-align: center;
+}
+.intro_child2{
+	width: 60%;
+	text-align: justify-all;
+	line-height: 200%;
+}
+#picture{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#downloadresume{
+	width: 20%;
+	height: auto;
+}
+#downloadresume img{
+	width: 100%;
+}
+#picture a{
+	width: 25%;
+  display: flex;
+  justify-content: center;
+}
+#superphoto{
+	width: 100%;
+}
+
+#downloadresumebutton{
+	display: flex;
+	text-align: center;
+	width: 30%;
+	margin-bottom: 5%;
+}
+#downloadresume{
+  width: 100%;
+ 	display: inline-block;
+  background-color: black;
+  border: solid white 1px;
+  padding: 3%;
+  margin-top: 10%;
+}
+#downloadresume:hover{
+	background-color: darkgrey;
+  border: solid 1px black;
+  box-shadow: 0 0 0 1px ghostwhite;
+  cursor: pointer;
+}
+/*#downloadresume a:hover{
+	color: black;
+}*/
+#downloadresume:active{
+	color: darkgrey;
+}
+
+/*----------------------------------------Brand-Strategy-----------------------------------------*/
+
+#text{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: -1.5%;
+}
+#text a{
+		text-align: center;
+		width: 50%;
+}
+#text h1{
+}
+#text em{
+	font-size : 1.7vw;
+	font-style: normal;
+}
+#text p{
+	margin: -7% 0;
+	font-family: 'Work Sans Thin';
+}
+
+/*--------------------------------------Super-Hover-effect-----------------------------------------*/
+#text a{
+	text-decoration: none;
+}
+.shine{
+	text-decoration: none;
+	  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(255, 250, 250, 1),
+      rgba(0, 0, 0, 0)
+  );
+  background-size: 0 9%, 100% 9%;
+  background-position: 100% 100%, 50% 107%;
+  background-repeat: no-repeat;
+  transition: background-size 777ms;
+}
+/*.shine:hover{
+  background-size: 0 9%, 100% 9%;
+}*/
+
+/*------------------------------------------Video-Intro------------------------------------*/
+
+#videointro{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 5%;
+}
+#videointro div{
+	width: 50%;
+}
+#videointro h1{
+	text-align: center;
+	border-style: solid;
+	border-width: 0.5%;
+	border-color: ghostwhite;
+	padding: 3% 0;
+
+	font-size: 2.5vw;
+}
+#videointro em{
+	font-size: 1.5vw;
+	font-weight: normal;
+	font-style: normal;
+	margin-top: -3%;
+}
+#videointro img{
+	width: 7%;
+	padding-top: 7%;
+}
+
+/*--------------------------------------------Video-----------------------------------------*/
+
+#cv_video{
+	text-align: center;
+	padding-top: 2%;
+	margin-bottom: 2%;
+}
+
+/*--------------------------------------------Contact----------------------------------------------*/
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#contact_title{
+	width: 28%;
+	font-size: 0.7vw;
+}
+#contact form{
+	width: 55%;
+	text-align: left;
+	margin-bottom: 5%;
+}
+#contact div{
+	margin-top: 1%;
+}
+#contact label{
+	font-size: 1.3em;
+	line-height: 150%;
+}
+#contact input{
+	width: 100%;		
+	height: 30px;
+	background-color: black;
+	border: solid 1px ghostwhite;
+	box-shadow: -1px 1px 3px  ghostwhite;
+}
+#contact textarea{
+	width: 100%;
+	background-color: black;
+	border: solid 1px ghostwhite;
+	box-shadow: -1px 1px 3px  ghostwhite;
+}
+#sendbutton{
+	display: flex;
+	text-align: center;
+	width: 30%;
+	margin: 0 35%;
+	line-height: 300%;
+}
+#send{
+  width: 100%;
+ 	display: inline-block;
+  background-color: black;
+  border: solid white 1px;
+  padding: 3%;
+  margin-top: 10%;
+}
+#send:hover{
+	color: black;
+	background-color: ghostwhite;
+  border: solid 1px black;
+  box-shadow: 0 0 0 1px ghostwhite;
+}
+#send:active{
+	color: darkgrey;
+	font-size: 2vw;
+}
+
+/*-----------------------------------------Message-Sent-Page----------------------------------------*/
+
+#messagesent{
+	margin-bottom: 0%;
+}
+#comete{
+	width: 20%;
+	margin: -3% 30% 0% 50%;
+}
+.card{
+	width: 89%;
+	text-align: left;
+}
+.card p{
+	margin: 0;
+	max-width: 80%;
+	text-overflow: ellipsis;
+	-webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+.message_content{
+	border: solid 1px ghostwhite;
+	box-shadow: -1px 1px 3px  ghostwhite;
+	max-width: 80%;
+	padding: 1%;
+}
+
+/*-----------------------------------------Skills-&-Degress-----------------------------------------*/
+
+.degree_intro{
+	width: 60%;
+	margin: 0 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.degree_intro h1{
+	font-size: 2.5vw;
+	margin-bottom: 0%;
+}
+.degree_intro h2{
+	text-align: justify;
+}
+
+/*-----------------------------------------------Skills--------------------------------------------*/
+
+.skills_and_diplomas{
+	margin: 0% 5%;
+}
+.degree_title{
+	width: 50%;
+	margin: 5% 25% 2% 25%;
+	display: flex;
+	flex-direction: column;
+}
+.degree_title h2{
+	margin: 0;
+}
+.degree_title img{
+	width: 100%;
+}
+#skills{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.wholeicons{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	margin: 0 1% 3% 1%;
+}
+.title_icons{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+.title_icons p{
+	margin-bottom: -1%;
+	font-size: 1.7vw;
+}
+.title_icons img{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+.insideicons{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+  align-items: center;
+}
+.insideicons div{
+	width: 100%;
+}
+.insideicons img{
+	width: 70%;
+}
+.iconsolo{
+	padding: 0 25%;
+}
+
+/*------------------------------------------------Diplomas-----------------------------------------------------*/
+
+.edumotiv{
+	width: 100%;
+	display: flex;
+	text-align: center;
+}
+
+#diplomas{
+	width: 100%;
+	display: flex;
+	text-align: center;
+}
+.degree_title em{
+	font-weight: normal;
+}
+.degreesection{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.studiestitle{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 5%;
+}
+.studiestitle img{
+	width: 80%;
+}
+.studiestitle h1{
+}
+.diplomaicon{
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 10%;
+}
+.diploma_title{
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 2%;
+}
+.diploma_title h1{
+	font-size: 1.7vw;
+}
+.diploma_title h2{
+	font-size: 1.6vw;
+	margin-bottom: -1%;
+}
+.diploma_title h3{
+	font-size: 1.4vw;
+}
+.diploma_titleUp{
+	margin-top: -1.5%;
+}
+.diploma_title img{
+	width: 50%;
+}
+.diplomapicture{
+	width: 70%;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+}
+.diplomapicture a{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.diplomapicture img{
+	width: 100%;
+	box-shadow: -3px 3px 9px  ghostwhite;
+}
+
+/*--------------------------------------------Brands-&-Experience----------------------------------------------*/
+
+#stable_title{
+	font-size: 0.7vw;
+}
+#brands{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	margin-top: 3%;
+}
+.brands{
+	width: 90%;
+	margin: 1% 5%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.brandpicture{
+	width: 50%;
+	align-self: center;
+	justify-content: center;
+	display: flex;
+}
+.brandpicture a{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+.brandpicture img{
+	width: 100%;
+}
+.brandtext{
+	width: 50%;
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.smallcross{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+.smallcross img{
+	width: 9%;
+	height: auto;
+	cursor: pointer;
+}
+.brand_title{
+	width: 80%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.brand_line_title{
+	max-width: 100%;
+	min-width: 100%;
+}
+.brand_subtitle{
+	width: 80%;
+	text-align: center;
+}
+.brand_title h1{
+	margin-bottom: 0%;
+}
+.brand_description{
+	width: 75%;
+	margin: 0 5%;
+	text-align: justify;
+	height: auto;
+	overflow: auto;
+}
+.brand_description h3{
+	font-size: 1.7em;
+	margin-bottom: 0;
+	padding-right: 2%;
+	text-decoration: underline;
+	text-underline-offset: 33%;
+	text-decoration-thickness: 0.5%;
+}
+.brand_description li{
+	font-size: 1.2em;
+	margin-bottom: 2%;
+}
+.brand_description ul{
+	margin-bottom: 3%;
+	padding-right: 2%;
+	list-style-image: url('images/cerclelist.png');
+}
+.brand_description p{
+	font-size: 1.2em;
+	padding-right: 2%;
+}
+.brandillustrations{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 2%;
+}
+.brandillustrations figure{
+	width: 30%;
+	margin: auto;
+}
+.brandillustrations a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	text-decoration: none;
+}
+.brandillustrations img{
+	width: 100%;
+}
+.brandillustrations figcaption{
+	font-size: 1.2vw;
+	font-style: italic;
+	text-align: center;
+	padding: 2%;
+}
+/*-----------------------------------------------------Arcticle-------------------------------------------------------*/
+
+.article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10%;
+}
+.article_title{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+}
+.line_title{
+	max-width: 100%;
+	min-width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.article_subtitle{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.line_subtitle{
+	max-width: 100%;
+	min-width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.content{
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+	text-underline-offset: 20% ;
+}
+.article_title h1{
+	margin-bottom: 0%;
+	font-size: 4em;
+}
+.article h2{
+	margin-bottom: 0%;
+	font-size: 3em;
+}
+.article h3{
+	font-size: 2em;
+	line-height: 150%;
+}
+.article p{
+	font-size: 1.5em;
+	line-height: 150%;
+}
+.articledate{
+	width: 80%;
+	padding-top: 3%;
+	text-align: right;
+	font-size: 1.3em;
+}
+
+/*--------------------------------------------Papers-----------------------------------------------*/
+
+#papers{
+	width: 90%;
+	margin: 0 5% 5% 5% ;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.paperbox{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	margin-bottom: 5%;
+	position: relative;
+	border: 1px solid white;
+	box-shadow: -1px 1px 3px  ghostwhite;	
+	text-shadow: -3px 3px 7px black, 2px -2px 5px black, 2px 2px 5px black, -2px -2px 5px black;
+}
+.paperbox img{
+	width: 100%;
+	opacity: 0.55;
+	display: block;
+	transition: opacity 3s;
+
+}
+.paperbox h1{
+	font-size: 1.9vw;
+	width: 90%;
+	margin: 0 5%;
+	position: absolute;
+	top: 40%;
+}
+.paperbox h2{
+	font-size: 1.7vw;
+	width: 90%;
+	margin: 0 5%;
+	position: absolute;
+	top: 50%;
+	line-height: 150%;
+}
+.paperbox img:hover{
+	opacity: 0;
+	transition-duration: 0.7s;
+  transition-delay: 0s;
+}
+
+/*-------------------------------------------Footer-------------------------------------------------*/
+
+footer{
+	width: 100%;
+	margin:  3% 0 3% 0;
+}
+#footerline{
+	display: flex;
+	margin-bottom: -2%;
+}
+#footerline img{
+	width: 100%;
+}
+#footermenu{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.footericon{
+	width: 11.5%;	
+	display: flex;
+	justify-content: center;
+}
+.footericon a{
+	display: flex;
+}
+.footericon img{
+	width: 100%;
+}
+.footerimage{
+	width: 15%;
+	display: flex;
+	justify-content: center;
+}
+.footerimage img{
+	width: 10%;
+}
+#copyrights{
+	font-size: 0.7em;
+	line-height: 100%;
+}
+footer p{
+	font-size: 1.7vw;
+	line-height: 150%;
+}
+footer a{
+	width: 20%;
+	text-decoration: none;
+}
+footer a:link{
+	color: whitesmoke;
+	text-decoration: none;
+}
+footer a:visited{
+	color: whitesmoke;
+	text-decoration: none;
+}
+footer a:active{
+	color: black;
+	text-decoration: none;
+}
+footer a:hover{
+	color: darkgrey;
+	text-decoration: none;
+}
+
+/*-----------------------------------------Legal-Notice---------------------------------------------*/
+
+#legalmentions em{
+	font-weight: bold;
+	font-style: normal;
+}
+#legalmentions .article_title{
+	width: 70%;
+}
+#legaldate{
+	text-align: right;
+}
+
+/*---------------------------------------Page-with-picture------------------------------------------*/
+
+#profilepicturepage{
+	height: auto;
+	width: 80%;
+	margin: 0 10% 0 10%;
+}
